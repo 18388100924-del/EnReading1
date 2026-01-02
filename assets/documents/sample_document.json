@@ -1,0 +1,100 @@
+{
+  "id": "sample_document",
+  "title": "Sample English Reading",
+  "description": "A sample document for testing the app",
+  "sentences": [
+    {
+      "english": "The quick brown fox jumps over the lazy dog.",
+      "chinese": "敏捷的棕色狐狸跳过懒狗。",
+      "highlightWords": [
+        {
+          "word": "quick",
+          "englishDefinition": "Moving fast or doing something in a short time.",
+          "chineseDefinition": "快速的；敏捷的",
+          "startIndex": 4,
+          "endIndex": 9
+        },
+        {
+          "word": "lazy",
+          "englishDefinition": "Unwilling to work or use energy; showing a lack of effort or care.",
+          "chineseDefinition": "懒惰的；懒散的",
+          "startIndex": 35,
+          "endIndex": 39
+        }
+      ]
+    },
+    {
+      "english": "Reading is a fundamental skill that opens doors to knowledge and imagination.",
+      "chinese": "阅读是一项基本技能，它为知识和想象力打开大门。",
+      "highlightWords": [
+        {
+          "word": "fundamental",
+          "englishDefinition": "Forming a necessary base or core; of central importance.",
+          "chineseDefinition": "基本的；根本的；基础的",
+          "startIndex": 13,
+          "endIndex": 24
+        },
+        {
+          "word": "imagination",
+          "englishDefinition": "The faculty or action of forming new ideas, or images or concepts of external objects not present to the senses.",
+          "chineseDefinition": "想象力；创造力",
+          "startIndex": 66,
+          "endIndex": 77
+        }
+      ]
+    },
+    {
+      "english": "Technology has revolutionized the way we communicate with each other.",
+      "chinese": "科技已经彻底改变了我们彼此交流的方式。",
+      "highlightWords": [
+        {
+          "word": "revolutionized",
+          "englishDefinition": "To change something completely and fundamentally.",
+          "chineseDefinition": "彻底改变；革命化",
+          "startIndex": 15,
+          "endIndex": 29
+        },
+        {
+          "word": "communicate",
+          "englishDefinition": "To share or exchange information, news, or ideas.",
+          "chineseDefinition": "交流；沟通；传达",
+          "startIndex": 41,
+          "endIndex": 52
+        }
+      ]
+    },
+    {
+      "english": "Practice makes perfect when learning a new language.",
+      "chinese": "学习一门新语言时，熟能生巧。",
+      "highlightWords": [
+        {
+          "word": "practice",
+          "englishDefinition": "The actual application or use of an idea, belief, or method, as opposed to theories relating to it.",
+          "chineseDefinition": "练习；实践",
+          "startIndex": 0,
+          "endIndex": 8
+        }
+      ]
+    },
+    {
+      "english": "Perseverance is the key to achieving your goals in life.",
+      "chinese": "坚持不懈是实现人生目标的关键。",
+      "highlightWords": [
+        {
+          "word": "perseverance",
+          "englishDefinition": "Continued effort to do or achieve something despite difficulties, failure, or opposition.",
+          "chineseDefinition": "坚持不懈；毅力",
+          "startIndex": 0,
+          "endIndex": 12
+        },
+        {
+          "word": "achieving",
+          "englishDefinition": "To successfully reach or accomplish a goal or desired result.",
+          "chineseDefinition": "实现；达到；完成",
+          "startIndex": 27,
+          "endIndex": 36
+        }
+      ]
+    }
+  ]
+}
