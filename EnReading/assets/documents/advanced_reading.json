@@ -1,0 +1,67 @@
+{
+  "id": "advanced_reading",
+  "title": "Advanced English Reading",
+  "description": "More challenging vocabulary and concepts",
+  "sentences": [
+    {
+      "english": "The phenomenon of climate change has become an increasingly urgent global concern.",
+      "chinese": "气候变化现象已成为日益紧迫的全球关注问题。",
+      "highlightWords": [
+        {
+          "word": "phenomenon",
+          "englishDefinition": "A fact or situation that is observed to exist or happen, especially one whose cause or explanation is in question.",
+          "chineseDefinition": "现象；奇迹",
+          "startIndex": 4,
+          "endIndex": 14
+        },
+        {
+          "word": "urgent",
+          "englishDefinition": "Requiring immediate action or attention; pressing.",
+          "chineseDefinition": "紧急的；急迫的",
+          "startIndex": 58,
+          "endIndex": 64
+        }
+      ]
+    },
+    {
+      "english": "Scientific research has demonstrated the efficacy of vaccines in preventing diseases.",
+      "chinese": "科学研究已经证明了疫苗在预防疾病方面的有效性。",
+      "highlightWords": [
+        {
+          "word": "demonstrated",
+          "englishDefinition": "To clearly show the existence or truth of something by giving proof or evidence.",
+          "chineseDefinition": "证明；展示；示范",
+          "startIndex": 23,
+          "endIndex": 35
+        },
+        {
+          "word": "efficacy",
+          "englishDefinition": "The ability to produce a desired or intended result; effectiveness.",
+          "chineseDefinition": "功效；效力",
+          "startIndex": 40,
+          "endIndex": 48
+        }
+      ]
+    },
+    {
+      "english": "The complexity of human emotions makes psychology a fascinating field of study.",
+      "chinese": "人类情感的复杂性使心理学成为一个令人着迷的研究领域。",
+      "highlightWords": [
+        {
+          "word": "complexity",
+          "englishDefinition": "The state or quality of being intricate or complicated.",
+          "chineseDefinition": "复杂性；错综复杂",
+          "startIndex": 4,
+          "endIndex": 14
+        },
+        {
+          "word": "fascinating",
+          "englishDefinition": "Extremely interesting or captivating.",
+          "chineseDefinition": "迷人的；极有吸引力的",
+          "startIndex": 53,
+          "endIndex": 64
+        }
+      ]
+    }
+  ]
+}
