@@ -34,7 +34,7 @@ jobs:
       run: flutter pub get
     
     - name: Build Web
-      run: flutter build web --release --base-href "/EnReading/"
+      run: flutter build web --release --base-href "/EnReading1/"
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
