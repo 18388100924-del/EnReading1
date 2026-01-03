@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import '../models/document.dart';
 import 'csv_parser.dart';
 import 'pdf_parser.dart';
@@ -13,10 +14,11 @@ class DocumentService {
       final Map<String, dynamic> manifestMap = json.decode(manifestContent);
       
       // Find all document files (json, csv, pdf)
+      // Note: PDF support is disabled on Web platform due to compatibility issues
       final documentPaths = manifestMap.keys
           .where((String key) => 
               key.startsWith('assets/documents/') && 
-              (key.endsWith('.json') || key.endsWith('.csv') || key.endsWith('.pdf')))
+              (key.endsWith('.json') || key.endsWith('.csv') || (kIsWeb ? false : key.endsWith('.pdf'))))
           .where((String key) => !key.endsWith('_data.json')) // Exclude PDF companion files
           .toList();
 
@@ -28,7 +30,7 @@ class DocumentService {
           doc = await _loadJsonDocument(path);
         } else if (path.endsWith('.csv')) {
           doc = await CsvParser.parseCsv(path);
-        } else if (path.endsWith('.pdf')) {
+        } else if (path.endsWith('.pdf') && !kIsWeb) {
           doc = await PdfParser.parsePdf(path);
         }
         
@@ -57,10 +59,12 @@ class DocumentService {
         return await CsvParser.parseCsv('assets/documents/$documentId.csv');
       } catch (_) {}
       
-      // Try PDF
-      try {
-        return await PdfParser.parsePdf('assets/documents/$documentId.pdf');
-      } catch (_) {}
+      // Try PDF (only on non-web platforms)
+      if (!kIsWeb) {
+        try {
+          return await PdfParser.parsePdf('assets/documents/$documentId.pdf');
+        } catch (_) {}
+      }
       
       print('Document not found: $documentId');
       return null;
